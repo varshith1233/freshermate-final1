@@ -1,0 +1,211 @@
+/* LoginPage.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5; */
+  }
+  
+  .login-title {
+    margin-top: -10px;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    font-weight: bold;
+    background: linear-gradient(45deg, #3dbed4, #317910); /* Mint green colors */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+
+
+
+  .login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+    padding: 20px;
+    box-sizing: border-box;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+  }
+  
+  .login-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background: white;
+    border-radius: 10px 0 0 10px; /* Rounded only on the left for left side */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    margin: 0; /* Removed margins to make them connect */
+  } 
+  .login-right
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 40px; */
+    background: white;
+    border-radius: 10px 0 0 10px; /* Rounded only on the left for left side */
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    box-sizing: border-box;
+    margin: 0; /* Removed margins to make them connect */
+  }
+  
+  .login-left {
+    max-width: 400px;
+    flex: 1;
+    border-right: none; /* Remove border to connect */
+  }
+  
+  .login-right {
+    max-width: 550px;
+    background-color: #f5f5f5;
+    flex: 1;
+    border-left: none; /* Remove border to connect */
+    border-radius: 0 10px 10px 0; /* Rounded only on the right for right side */
+  }
+  
+  .logo {
+    width: 150px;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    color: #2f4f4f;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    text-align: center; /* Center align text for better look on smaller screens */
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .input-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #2f4f4f;
+  }
+  
+  .input-group input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 1rem;
+  }
+  
+  .form-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+  
+  .checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    color: #2f4f4f;
+  }
+  
+  .checkbox input {
+    margin-right: 10px;
+  }
+  
+  .btn-signin {
+    background-color: #2f4f4f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 100%;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-signin:hover {
+    background-color: #3f5f5f;
+  }
+  
+  .link-group {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+  }
+  
+  .link-group span {
+    margin-right: 10px;
+  }
+  
+  .btn-create-account {
+    color: #2f4f4f;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .forgot-password {
+    color: #2f4f4f;
+    text-decoration: none;
+    margin-top: 10px;
+  }
+  
+  .illustration {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .login-container {
+      flex-direction: column; /* Stack sections vertically on tablets */
+      padding: 20px;
+    }
+  
+    .login-left, .login-right {
+      max-width: 100%;
+      margin: 10px 0; /* Adjust margin for stacked sections */
+      border-radius: 10px; /* Apply rounded corners again when stacked */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .login-left, .login-right {
+      padding: 15px; /* Reduced padding for smaller screens */
+    }
+  
+    h2 {
+      font-size: 1.5rem; /* Smaller font size for smaller screens */
+    }
+  
+    .input-group input {
+      font-size: 0.9rem; /* Smaller input font size */
+    }
+  
+    .btn-signin {
+      font-size: 0.9rem; /* Smaller button font size */
+      padding: 8px 16px; /* Adjust button padding */
+    }
+  
+    .logo {
+      width: 120px; /* Smaller logo for mobile */
+    }
+  }
+  

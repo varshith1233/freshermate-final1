@@ -1,0 +1,24 @@
+/* Spinner.css */
+
+.spinner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+  }
+  
+  .spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1); /* Light border */
+    border-left-color: #3498db; /* Blue color for spinner */
+    border-radius: 50%;
+    width: 40px; /* Width of the spinner */
+    height: 40px; /* Height of the spinner */
+    animation: spin 1s linear infinite; /* Spin animation */
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg); /* Full rotation */
+    }
+  }
+  

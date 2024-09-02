@@ -1,0 +1,75 @@
+.card-fetched-question-paper {
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+     flex-direction: column; 
+     height: auto; 
+
+   } 
+  
+   .card-body-fetched-question-paper {
+    display: flex;
+    padding: 1rem;
+  }
+  
+  .card-title-fetched-question-paper {
+    margin-bottom: 0.5rem;
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card-text-fetched-question-paper{
+    font-size: 1rem; /* Text font size */
+    margin-bottom: 1rem; /* Space below the text */
+    overflow: hidden; /* Hide overflow */
+    text-overflow: ellipsis; /* Ellipsis for overflowing text */
+    display: -webkit-box; /* Use Webkit box layout */
+    -webkit-line-clamp: 3; /* Limit to 3 lines */
+    -webkit-box-orient: vertical; /* Vertical orientation */
+    white-space: normal;  
+  }
+  
+  .card-content-fetched-question-paper {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card-buttons-fetched-question-paper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+    align-items: flex-end;
+  }
+  
+  .card-img-fetched-question-paper {
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .btn-fetched-question-paper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  
+  .col-md-12-fetched-question-paper {
+    width: 100%;
+  }
+  .buttons-main-fetched-question-paper{
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+
+  }
+  .subjectname-fetched-question-paper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+    

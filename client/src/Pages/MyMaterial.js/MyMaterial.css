@@ -1,0 +1,66 @@
+.card-my-material {
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  
+  .card-body-my-material {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+  }
+  
+  .card-header-my-material {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .card-title-my-material {
+
+    text-align: center;
+    margin: 0;
+    flex: 1;
+  }
+  
+  .card-content-my-material {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  
+  .card-text-my-material {
+    font-size: 1rem; /* Text font size */
+  margin-bottom: 1rem; /* Space below the text */
+  overflow: hidden; /* Hide overflow */
+  text-overflow: ellipsis; /* Ellipsis for overflowing text */
+  display: -webkit-box; /* Use Webkit box layout */
+  -webkit-line-clamp: 3; /* Limit to 3 lines */
+  -webkit-box-orient: vertical; /* Vertical orientation */
+  white-space: normal; /* Allow wrapping */
+  }
+  
+  .buttons-main-my-material {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: flex-end;
+  }
+  
+  .col-12 {
+    width: 100%;
+  }
+  
+  .btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  

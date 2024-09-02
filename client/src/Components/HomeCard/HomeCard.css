@@ -1,0 +1,122 @@
+.card {
+  width: 100%; /* Full width for each card */
+  height: 20rem; /* Fixed height for the card */
+  display: flex; /* Flexbox layout for card */
+  margin: 1rem 0; /* Margin on top and bottom of the card */
+  border: none;
+  border-radius: 0.25rem; /* Rounded corners */
+  overflow: hidden; /* Ensure content doesn’t overflow */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition for shadow and scaling */
+}
+
+/* .card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0.3, 0.3); /* Enhanced shadow effect on hover */
+  /* transform: translateY(-5px); Slightly lift the card on hover */
+/* }  */
+
+.card-content {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.card-img-container {
+  flex: 1; /* Image container takes up 50% of the card width */
+}
+
+.card-img {
+  width: 100%; /* Make image width fit the container */
+  height: 100%; /* Make image height fit the container */
+  object-fit: cover; /* Ensure image fits and maintains aspect ratio */
+}
+
+.card-body {
+  flex: 1; /* Content container takes up 50% of the card width */
+  padding: 1rem; /* Padding inside the card body */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-decoration: none;
+}
+
+.card-title {
+  font-size: 1.25rem; /* Title font size */
+  font-weight: bold; /* Bold title */
+  margin-bottom: 0.5rem; /* Space below the title */
+}
+
+.card-text {
+  font-size: 1rem; /* Text font size */
+  margin-bottom: 1rem; /* Space below the text */
+  overflow: hidden; /* Hide overflow */
+  text-overflow: ellipsis; /* Ellipsis for overflowing text */
+  display: -webkit-box; /* Use Webkit box layout */
+  -webkit-line-clamp: 3; /* Limit to 3 lines */
+  -webkit-box-orient: vertical; /* Vertical orientation */
+  white-space: normal; /* Allow wrapping */
+}
+
+.text-muted {
+  margin: 0.2rem 0; /* Reduced margin between text lines */
+}
+
+.hr-tag-card {
+  border: none; /* Remove default border */
+  border-top: 1px solid rgba(31, 30, 30, 0.3); /* Slightly darker line */
+  margin: 0.5rem 0; /* Space around the line */
+}
+
+/* Ensure no underline for buttons */
+.card-body .btn {
+  text-decoration: none; /* Remove underline if it exists */
+}
+
+/* Optional: Ensure button does not have extra styling */
+.card-body .btn-primary {
+  border: none; /* Remove default border */
+  background-color: #0e6223; /* Primary button color */
+  color: white; /* Text color */
+  padding: 0.5rem 1rem; /* Padding for the button */
+  font-size: 0.875rem; /* Font size */
+  border-radius: 0.25rem; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for button */
+  cursor: pointer; /* Pointer cursor */
+}
+.btn-upper-class{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-body .btn-primary:hover {
+  background-color: #0e6223; /* Darker color on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+.link-btn{
+  text-decoration: none;
+  color: white;
+}
+
+
+
+
+.btn-primary {
+  margin-top: 10px;
+  align-self: flex-start; /* Align button to the start of the content */
+  padding: 0.5rem 1rem; /* Smaller padding for a smaller button */
+  font-size: 0.875rem; /* Smaller font size for the button */
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column; /* Stack image and content vertically on small screens */
+    height: auto; /* Auto height for cards on small screens */
+  }
+
+  .card-img-container {
+    width: 100%; /* Full width for image container */
+    height: auto; /* Auto height for images */
+  }
+}

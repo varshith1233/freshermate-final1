@@ -1,0 +1,61 @@
+.card-my-question-paper {
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  
+  .card-body-my-question-paper {
+    display: flex;
+    padding: 1rem;
+  }
+  
+  .card-header-my-question-paper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .card-title-my-question-paper {
+      flex: 1;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .card-content-my-question-paper {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card-text-my-question-paper {
+    font-size: 1rem; /* Text font size */
+    margin-bottom: 1rem; /* Space below the text */
+    overflow: hidden; /* Hide overflow */
+    text-overflow: ellipsis; /* Ellipsis for overflowing text */
+    display: -webkit-box; /* Use Webkit box layout */
+    -webkit-line-clamp: 3; /* Limit to 3 lines */
+    -webkit-box-orient: vertical; /* Vertical orientation */
+    white-space: normal;   /* Allow wrapping */
+  }
+  
+  .buttons-main-my-question-paper {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: flex-end;
+  }
+  
+  .col-12 {
+    width: 100%;
+  }
+  
+  .btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  

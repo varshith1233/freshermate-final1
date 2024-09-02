@@ -1,0 +1,78 @@
+.card {
+  width: 100%; /* Full width for each card */
+  height: 20rem; /* Fixed height for the card */
+  display: flex; /* Flexbox layout for card */
+  flex-direction: column; /* Stack image and content vertically */
+  border: 1px solid #ddd; /* Border around the card */
+  border-radius: 0.25rem; /* Rounded corners */
+  overflow: hidden; /* Ensure content doesn’t overflow */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Default shadow */
+  transition: box-shadow 0.3s ease; /* Smooth shadow transition on hover */
+  margin-bottom: 1rem; /* Space below each card */
+}
+/* 
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0.3, 0.3); 
+  transform: translateY(-5px)
+} */
+
+.card-img {
+  height: 50%; /* Adjust image height to 50% of the card height */
+  object-fit: cover; /* Ensure image fits and maintains aspect ratio */
+  width: 100%; /* Full width for image container */
+}
+
+.card-body {
+  flex: 1; /* Content container takes up remaining space */
+  padding: 1rem; /* Padding inside the card body */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-title {
+  font-size: 1.25rem; /* Title font size */
+  font-weight: bold; /* Bold title */
+  margin-bottom: 0.5rem; /* Space below the title */
+}
+
+.card-text {
+  font-size: 0.875rem; /* Text font size */
+  color: #555; /* Text color */
+  margin-bottom: 1rem; /* Space below the text */
+}
+
+.truncated-text {
+  overflow: hidden; /* Hide overflow text */
+  text-overflow: ellipsis; /* Ellipsis for overflowing text */
+  display: -webkit-box; /* Use Webkit box layout */
+  -webkit-line-clamp: 3; /* Limit to 3 lines */
+  -webkit-box-orient: vertical; /* Vertical orientation */
+  white-space: normal; /* Allow wrapping */
+}
+
+.card-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* Space between icon and text */
+}
+
+.btn-outline-primary {
+  border: 1px solid #007bff; /* Outline color */
+  color: #007bff; /* Text color */
+  background-color: transparent; /* Transparent background */
+}
+
+.btn-outline-primary:hover {
+  background-color: #007bff; /* Background color on hover */
+  color: white; /* Text color on hover */
+  border-color: #007bff; /* Border color on hover */
+}

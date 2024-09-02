@@ -1,0 +1,14 @@
+/* Homepage.css */
+
+.container {
+  display: flex; /* Use flexbox to handle card layout */
+  flex-direction: column; /* Stack cards vertically */
+  gap: 1rem; /* Space between cards */
+  padding: 1rem; /* Padding around the container */
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0.5rem; /* Adjust padding for smaller screens */
+  }
+}

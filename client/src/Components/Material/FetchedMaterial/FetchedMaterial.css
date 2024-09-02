@@ -1,0 +1,75 @@
+ .card-fetched-material {
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+     flex-direction: column; 
+     height: auto; 
+
+   } 
+  
+   .card-body-fetched-material {
+    display: flex;
+    padding: 1rem;
+  }
+  
+  .card-title-fetched-material {
+    margin-bottom: 0.5rem;
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card-text-fetched-material{
+    font-size: 1rem; /* Text font size */
+    margin-bottom: 1rem; /* Space below the text */
+    overflow: hidden; /* Hide overflow */
+    text-overflow: ellipsis; /* Ellipsis for overflowing text */
+    display: -webkit-box; /* Use Webkit box layout */
+    -webkit-line-clamp: 3; /* Limit to 3 lines */
+    -webkit-box-orient: vertical; /* Vertical orientation */
+    white-space: normal;   
+  }
+  
+  .card-content-fetched-material {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card-buttons-fetched-material {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+    align-items: flex-end;
+  }
+  
+  .card-img-fetched-material {
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .btn-fetched-material {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  
+  .col-md-12-fetched-material {
+    width: 100%;
+  }
+  .buttons-main-fetched-material{
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+
+  }
+  .subjectname-fetched-material{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+    
