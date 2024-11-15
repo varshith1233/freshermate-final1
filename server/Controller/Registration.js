@@ -15,6 +15,7 @@ async function AddNewUser(req,res){
     const confirmPassword = req.body.confirmPassword
     const semester = req.body.semester
     try{
+        console.log("hi");
         const existingUser = await User.findOne({ email,rollNumber });
   
       if (existingUser) {
@@ -29,7 +30,7 @@ async function AddNewUser(req,res){
                 rollNumber,firstName,lastName,yearOfPassout,branch,section,email,hashedPassword,semester
             }
             const encodedData = encodeURIComponent(JSON.stringify(data));
-            const verification_url = `http://localhost:8000/register/verify/${token}/${encodedData}`
+            const verification_url = `http://localhost:8001/register/verify/${token}/${encodedData}`
             const maildetails = {
                 from:"samuelsachin69@gmail.com",
                 to:email,

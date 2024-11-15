@@ -11,13 +11,7 @@ const QuestionPaper = require('./Routes/QuestionPaper')
 
 
 //MIDDLEWARES
-app.use(cors(
-    {
-        origin:["https://deploy-mern-lwhq.vercel.app"],
-        methods:["POST","GET"],
-        credentials:true
-    }
-));
+app.use(cors());
 
 app.use(express.json())
 
